@@ -16,10 +16,10 @@ function App() {
 
         <NavBar/>
         <Routes>
-                <Route path='/' component={Home}></Route>
-                <Route path='/televisores' component={Televisores}></Route>
-                <Route path='/notebooks-y-tablets' component={NotebooksYTablets}></Route>
-                <Route path='/celulares' component={Celulares}></Route>
+                <Route path='/' element={<Home/>}></Route>
+                <Route path='/televisores' element={<Televisores/>}></Route>
+                <Route path='/notebooks-y-tablets' element={<NotebooksYTablets/>}></Route>
+                <Route path='/celulares' element={<Celulares/>}></Route>
         </Routes>
 
     </>;
