@@ -10,7 +10,7 @@ function ColorSchemesExample() {
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img
                             alt=""
                             src={logo}
@@ -20,9 +20,9 @@ function ColorSchemesExample() {
                         />{' '}
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#televisores">Televisores</Nav.Link>
-                        <Nav.Link href="#notebooks-y-tablets">Notebooks y Tablets</Nav.Link>
-                        <Nav.Link href="#celulares">Celulares</Nav.Link>
+                        <Nav.Link href="televisores">Televisores</Nav.Link>
+                        <Nav.Link href="notebooks-y-tablets">Notebooks y Tablets</Nav.Link>
+                        <Nav.Link href="celulares">Celulares</Nav.Link>
                     </Nav>
                     <Button variant='light' style={{marginRight : 10}}>Register</Button>
                     <Button variant='light'>Login</Button>
