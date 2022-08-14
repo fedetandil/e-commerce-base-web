@@ -1,19 +1,36 @@
 import React from 'react';
-import logo from '../images/logo/react.png' // relative path to image
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
+import logo from '../images/logo/eshopsmall.png' // relative path to image
 
-const NavBar = () => (
-    React.createElement('nav', {className: 'nav-bar'},
-        React.createElement('div', {className: 'logo'},
-            React.createElement('img', {className: 'image-logo', src: logo}, null)),
-        React.createElement('div', {className: 'nav-home'},
-            React.createElement('button', {className: 'btn btn-home'}, 'Inicio')),
+function ColorSchemesExample() {
+    return (
+        <>
+            <Navbar bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href="#home">
+                        <img
+                            alt=""
+                            src={logo}
+                            width="90"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />{' '}
+                    </Navbar.Brand>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#home">Televisores</Nav.Link>
+                        <Nav.Link href="#features">Notebooks y Tablets</Nav.Link>
+                        <Nav.Link href="#pricing">Celulares</Nav.Link>
+                    </Nav>
+                    <Button variant='light' style={{marginRight : 10}}>Register</Button>
+                    <Button variant='light'>Login</Button>
+                </Container>
 
-        React.createElement('ul', {className: 'list'},
-            React.createElement('li', {className: 'list-item'}, 'Televisores'),
-            React.createElement('li', {className: 'list-item'}, 'Notebooks y Tablets'),
-            React.createElement('li', {className: 'list-item'}, 'Celulares')
-        ),
-        React.createElement('div', {className: 'nav-login'},
-            React.createElement('button', {className: 'btn btn-login'}, 'Login'))))
+            </Navbar>
+        </>
+    );
+}
 
-export default NavBar;
+export default ColorSchemesExample;
