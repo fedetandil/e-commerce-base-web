@@ -1,0 +1,16 @@
+.category-container {
+    display: flex;
+    width: 100%;
+}
+
+.category-filter {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.container-products {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
